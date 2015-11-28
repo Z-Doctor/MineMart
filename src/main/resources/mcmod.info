@@ -1,0 +1,17 @@
+[
+{
+  "modid": "ZDoctorMM",
+  "name": "Mine Mart",
+  "description": "We'll buy your useless junk.",
+  "version": "1.7.10-0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ZDoctor"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "requiredMods": ["Forge"],
+  "dependencies": ["Forge"]
+}
+]
