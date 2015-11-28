@@ -1,6 +1,7 @@
 package zdoctor.mm.common.events;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.player.FillBucketEvent;
 import cpw.mods.fml.common.FMLCommonHandler;
 
 public class EventRegistry {
