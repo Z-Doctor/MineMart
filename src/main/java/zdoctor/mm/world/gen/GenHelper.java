@@ -33,13 +33,13 @@ public class GenHelper {
   public static void prepareLand(World world, int posX, int posY, int posZ, int width, int length, int height, Block base, Block... ignore) {
     if (ignore == null)
       ignore = new Block[] {};
-    for (int y = 0; y < height; y++) {
-      for (int x = 0; x < width; x++) {
-        for (int z = 0; z < length; z++) {
-          if (Arrays.asList(ignore).indexOf(world.getBlock(x, y, z)) == -1) {
-            if (y == 0 && world.isAirBlock(x, y, z)) {
+    for (int y = 0; y <= height; y++) {
+      for (int x = 0; x <= width; x++) {
+        for (int z = 0; z <= length; z++) {
+          if (Arrays.asList(ignore).indexOf(world.getBlock(posX + x, posY + y, posZ  + z)) == -1) {
+            if (y == 0 && world.isAirBlock(posX + x, posY, posZ + z)) {
               world.setBlock(posX + x, posY, posZ + z, base);
-            } else
+            } else if(y != 0)
               world.setBlockToAir(posX + x, posY + y, posZ + z);
           }
         }
